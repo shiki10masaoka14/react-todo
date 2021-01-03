@@ -4,7 +4,7 @@ import TodoList from "./components/TodoList";
 import useTodo from "./hooks/useTodo";
 
 function App() {
-  const { todos } = useTodo;
+  const { todos } = useTodo();
 
   return (
     <div>

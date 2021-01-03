@@ -7,4 +7,8 @@ const getAll = async () => {
   return response.data;
 };
 
-export default getAll;
+const todoService={
+  getAll
+}
+
+export default todoService;
