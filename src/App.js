@@ -1,9 +1,15 @@
 import React from "react";
 
+import TodoList from "./components/TodoList";
+import useTodo from "./hooks/useTodo";
+
 function App() {
+  const { todos } = useTodo;
+
   return (
     <div>
-      <p>Hello React!</p>
+      <h1>Todo List</h1>
+      <TodoList todos={todos} />
     </div>
   );
 }
