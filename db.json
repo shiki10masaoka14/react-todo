@@ -8,12 +8,12 @@
     {
       "title": "Vue.js の学習",
       "id": "82ebaa6d-95b9-4771-ac51-6570ab7bd1ac",
-      "completed": false
+      "completed": true
     },
     {
-      "title": "React の学習",
-      "id": "3099525c-e0e7-4e68-8f0b-580bde787b7a",
-      "completed": false
+      "title": "Reactの学習",
+      "completed": false,
+      "id": "4f22100e-bcda-491b-88b1-2af6d6181a02"
     }
   ]
 }

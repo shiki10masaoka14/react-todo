@@ -7,8 +7,20 @@ const getAll = async () => {
   return response.data;
 };
 
-const todoService={
-  getAll
-}
+const update = async (id, newTodo) => {
+  const response = await axios.put(`${baseUrl}/${id}`, newTodo);
+  return response.data;
+};
+
+const _delete = async (id) => {
+  await axios.delete(`${baseUrl}/${id}`);
+  return id;
+};
+
+const todoService = {
+  getAll,
+  update,
+  delete: _delete,
+};
 
 export default todoService;
