@@ -17,10 +17,16 @@ const _delete = async (id) => {
   return id;
 };
 
+const add = async (newTodo) => {
+  const response = await axios.post(baseUrl, newTodo);
+  return response.data;
+};
+
 const todoService = {
   getAll,
   update,
   delete: _delete,
+  add,
 };
 
 export default todoService;
